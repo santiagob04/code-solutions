@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+
 :root {
     --main-titles-color: #53A2BE;
     --main-buttons-color: #1D84B5;
@@ -222,7 +224,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    padding: 4rem 0;
+    padding: 1.5rem 0;
     margin: 0 auto;
 }
 
@@ -380,4 +382,34 @@ input[type=submit] {
     border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     margin-bottom: 3rem;
+}
+
+.enter-login {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter-login h2 {
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+.enter-login p {
+    font-size: 1.5rem;
+    text-align: center;
+    word-spacing: 1px;
+    width: 20%;
+    padding: 1rem;
+}
+.bottom-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
 }
