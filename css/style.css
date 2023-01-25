@@ -209,6 +209,15 @@ nav {
     background-color: #f1f1f1;
 }
 
+.p-service {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    font-family: 'Source Code Pro', monospace;
+}
+
 form {
     display: flex;
     flex-wrap: wrap;
