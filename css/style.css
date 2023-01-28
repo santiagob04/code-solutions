@@ -45,11 +45,11 @@ nav {
 }
 
 .logo h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     top: 30px;
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
-    color: #fff;
+    color: white;
     overflow: hidden;
     border-right: .15em solid orange;
     white-space: nowrap;
@@ -82,13 +82,18 @@ nav {
     }
 }
 
-.navigation ul {
+.navbar .navbar-collapse {
+    padding-top: 1rem;
+    justify-content: flex-end;
+}
+
+.navbar-list {
     list-style: none;
     display: flex;
     gap: 10px;
 }
 
-.navigation ul li a {
+.navbar-list li a {
     color: white;
     text-decoration: none;
     font-size: 2rem;
@@ -96,7 +101,7 @@ nav {
     border-radius: 5px;
 }
 
-.navigation ul li a:hover {
+.navbar-list li a:hover {
     background-color: var(--main-buttons-color);
 }
 
@@ -143,9 +148,14 @@ nav {
 
 .servicios {
     background-color: #f1f1f1;
-    height: 700px;
-    display: grid;
-    place-items: center;
+    height: 600px;
+
+    /* nuevo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
     padding: 4rem 0;
 }
 
@@ -162,16 +172,15 @@ nav {
 }
 
 .cards-centradas {
-
-    width: 1054px;
-    margin: 0 auto;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card-servicios {
     width: 250px;
     height: 300px;
-    float: left;
     margin: 10px 50px;
     transition: all .5s ease-out;
     /* box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px; */
@@ -359,18 +368,21 @@ input[type=submit] {
     flex-direction: column;
     gap: 25px;
 }
+
 .main-aboutus {
     height: 700px;
     display: grid;
     place-items: center;
     background-color: #f1f1f1;
 }
+
 .about-us {
     font-size: 2rem;
     font-family: 'Source Code Pro', monospace;
     text-align: center;
     width: 60%;
 }
+
 .h2-aboutus {
     text-transform: uppercase;
     font-size: 3rem;
@@ -400,6 +412,7 @@ input[type=submit] {
     padding: 2rem;
     text-transform: uppercase;
 }
+
 .enter-login p {
     font-size: 1.5rem;
     text-align: center;
@@ -407,9 +420,79 @@ input[type=submit] {
     width: 20%;
     padding: 1rem;
 }
+
 .bottom-submit {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
+}
+
+@media(max-width:360px) {
+    .navbar .navbar-collapse .navbar-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        height: 450px;
+    }
+
+    .contenedor-header .hero-card {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .servicios {
+        height: 100%;
+    }
+
+    .page-footer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-footer {
+        flex-direction: column;
+    }
+
+    .ubicacion {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cu-titulo {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .ubicacion .frameUbicacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ubicacion .frameUbicacion iframe {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .social-box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .social-box ul {
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .navini .navbar-list {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
 }
