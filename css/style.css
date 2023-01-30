@@ -443,6 +443,12 @@ input[type=submit] {
     .servicios{
         height: 100%;
     }
+    .p-service {
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin: 10px;
+    }
     .cards-centradas {
         width: 50%;
         justify-content: center;
