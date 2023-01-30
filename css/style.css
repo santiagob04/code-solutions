@@ -148,7 +148,7 @@ nav {
 
 .servicios {
     background-color: #f1f1f1;
-    height: 600px;
+    height: 100%;
 
     /* nuevo */
     display: flex;
@@ -221,8 +221,8 @@ nav {
 }
 
 .p-service {
-    width: 60%;
-    margin: auto;
+    display: flex;
+    width: 40%;
     text-align: center;
     font-size: 1.5rem;
     word-spacing: 2px;
@@ -428,25 +428,25 @@ input[type=submit] {
     gap: 1rem;
 }
 
-@media(max-width:360px) {
-    .navbar .navbar-collapse .navbar-list {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header {
-        height: 450px;
-    }
-
-    .contenedor-header .hero-card {
-        justify-content: flex-start;
+@media(max-width:1050px){
+    .main-aboutus{
         width: 100%;
-    }
-
-    .servicios {
         height: 100%;
     }
-
+    .main-aboutus p {
+        font-size: 1.5rem;
+    }
+    .enter-login p{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .servicios{
+        height: 100%;
+    }
+    .cards-centradas {
+        width: 50%;
+        justify-content: center;
+    }
     .page-footer {
         padding: 0;
         margin: 0;
@@ -494,5 +494,36 @@ input[type=submit] {
         justify-content: center;
         margin: 0;
         padding: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .navbar .navbar-collapse .navbar-list {
+        flex-direction: column;
+        text-align: end;
+    }
+    .contenedor-header .hero-card{
+        width: 60%;
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+    .card-servicios{
+        margin: 0;
+    }
+}
+@media(max-width:386px) {
+    .navbar .navbar-collapse .navbar-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor-header .hero-card {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .servicios {
+        height: 100%;
     }
 }
