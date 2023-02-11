@@ -1,0 +1,24 @@
+{
+  "name": "code-solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagob04/code-solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagob04/code-solutions/issues"
+  },
+  "homepage": "https://github.com/santiagob04/code-solutions#readme",
+  "dependencies": {
+    "sass": "^1.58.0"
+  }
+}
