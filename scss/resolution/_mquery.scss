@@ -1,0 +1,105 @@
+@media(max-width:1050px){
+    .main-aboutus{
+        width: 100%;
+        height: 100%;
+    }
+    .main-aboutus p {
+        font-size: 1.5rem;
+    }
+    .enter-login p{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .servicios{
+        height: 100%;
+    }
+    .p-service {
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin: 10px;
+    }
+    .cards-centradas {
+        width: 50%;
+        justify-content: center;
+    }
+    .page-footer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-footer {
+        flex-direction: column;
+    }
+
+    .ubicacion {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cu-titulo {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .ubicacion .frameUbicacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ubicacion .frameUbicacion iframe {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .social-box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .social-box ul {
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .navini .navbar-list {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .navbar .navbar-collapse .navbar-list {
+        flex-direction: column;
+        text-align: end;
+    }
+    .contenedor-header .hero-card{
+        width: 60%;
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+    .card-servicios{
+        margin: 0;
+    }
+}
+@media(max-width:386px) {
+    .navbar .navbar-collapse .navbar-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor-header .hero-card {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .servicios {
+        height: 100%;
+    }
+}

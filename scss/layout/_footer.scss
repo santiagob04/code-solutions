@@ -1,0 +1,56 @@
+.page-footer {
+    background-color: #363636;
+    padding: 6rem 7rem;
+    color: white;
+    position: relative;
+
+    .page-fcontainer {
+        position: relative;
+        z-index: 10;
+
+        .section-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .ubicacion {
+                width: 35%;
+                padding: 2rem;
+            
+            }
+        }
+        .social-box {
+            width: 25%;
+            padding: 2rem;
+            h2 {
+                margin-bottom: 1rem;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                list-style: none;
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    p {
+                        font-size: 1.5rem;
+                    }
+                    a i {
+                        color: white;
+                        font-size: 3rem;
+                    }
+                }
+            }
+            
+        }
+        .navini .navigation-footer {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+    }
+}

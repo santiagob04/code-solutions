@@ -1,0 +1,28 @@
+.enter-login {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    h2 {
+        font-size: 3rem;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+        padding: 2rem;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        word-spacing: 1px;
+        width: 20%;
+        padding: 1rem;
+    }
+    .bottom-submit {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+}
