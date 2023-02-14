@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+
     h2 {
         font-size: 3rem;
         font-family: 'Kanit', sans-serif;
@@ -12,6 +13,7 @@
         padding: 2rem;
         text-transform: uppercase;
     }
+
     p {
         font-size: 1.5rem;
         text-align: center;
@@ -19,10 +21,19 @@
         width: 20%;
         padding: 1rem;
     }
-    .bottom-submit {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 1rem;
+    article{
+        .bottom-submit {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1rem;
+            .form-submit{
+                background-color: #09f;
+                @extend %form-buttons;
+            }
+        }
+        input{
+            @extend %input-fields;
+        }
     }
 }

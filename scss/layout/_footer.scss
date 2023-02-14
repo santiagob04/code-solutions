@@ -45,12 +45,15 @@
             }
             
         }
-        .navini .navigation-footer {
-            ul {
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
+        .navini{
+            .navigation-footer {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    @extend %nav-list;
+                }
             }
-        }
+        } 
     }
 }

@@ -4,10 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
 
-:root {
-    --main-titles-color: #53A2BE;
-    --main-buttons-color: #1D84B5;
-}
+@import'./utilities/variables';
+
+@import'./utilities/extends';
 
 @import './base/reset';
 
@@ -20,5 +19,7 @@
 @import './pages/aboutus';
 
 @import './pages/login';
+
+@import './layout/footer';
 
 @import './resolution/mquery';

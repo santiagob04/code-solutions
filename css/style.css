@@ -6,6 +6,39 @@
   --main-buttons-color: #1D84B5;
 }
 
+.enter-login article input, .contenedor-cu .contacto article form input, .contenedor-cu .contacto article form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  resize: none;
+}
+
+.enter-login article .bottom-submit .form-submit, .contenedor-cu .contacto article form .form-reset,
+.contenedor-cu .contacto article form .form-submit {
+  width: 10rem;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.page-footer .page-fcontainer .navini .navigation-footer ul li, header .navbar .container-fluid .navbar-collapse .navbar-list li {
+  list-style: none;
+}
+.page-footer .page-fcontainer .navini .navigation-footer ul li a, header .navbar .container-fluid .navbar-collapse .navbar-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 12px;
+  border-radius: 5px;
+}
+.page-footer .page-fcontainer .navini .navigation-footer ul li a:hover, header .navbar .container-fluid .navbar-collapse .navbar-list li a:hover {
+  background-color: #1D84B5;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -28,17 +61,17 @@ header {
   justify-content: space-between;
   position: relative;
 }
-header nav {
+header .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 1rem;
 }
-header .logo {
+header .navbar .container-fluid .logo {
   text-decoration: none;
   color: white;
 }
-header .logo h1 {
+header .navbar .container-fluid .logo h1 {
   font-size: 2.5rem;
   top: 30px;
   font-family: "Source Code Pro", monospace;
@@ -51,24 +84,13 @@ header .logo h1 {
   letter-spacing: 0.15em;
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
-header .navbar .navbar-collapse {
+header .navbar .container-fluid .navbar-collapse {
   padding-top: 1rem;
   justify-content: flex-end;
 }
-header .navbar .navbar-collapse .navbar-list {
-  list-style: none;
+header .navbar .container-fluid .navbar-collapse .navbar-list {
   display: flex;
   gap: 10px;
-}
-header .navbar .navbar-collapse .navbar-list li a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 12px;
-  border-radius: 5px;
-}
-header .navbar .navbar-collapse .navbar-list li a:hover {
-  background-color: var(--main-buttons-color);
 }
 header .contenedor-header {
   width: 100%;
@@ -124,7 +146,6 @@ header .contenedor-header .hero-card a:hover {
 .servicios {
   background-color: #f1f1f1;
   height: 100%;
-  /* nuevo */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,8 +153,7 @@ header .contenedor-header .hero-card a:hover {
   gap: 60px;
   padding: 4rem 0;
 }
-
-.title-text {
+.servicios .title-text {
   text-transform: uppercase;
   font-size: 4.3rem;
   font-family: "Source Code Pro", monospace;
@@ -144,55 +164,41 @@ header .contenedor-header .hero-card a:hover {
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
-
-.cards-centradas {
+.servicios .cards-centradas {
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-.card-servicios {
+.servicios .card-servicios {
   width: 250px;
   height: 300px;
   margin: 10px 50px;
   transition: all 0.5s ease-out;
-  /* box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px; */
 }
-
-.card-servicios:hover {
+.servicios .card-servicios:hover {
   transform: scale(1.05);
 }
-
-.card-img {
+.servicios .card-servicios .card-img {
   padding: 1rem;
 }
-
-.card-servicios h4 {
+.servicios .card-servicios h4 {
   font-size: 1.5rem;
   font-family: "Source Code Pro", monospace;
   font-weight: bold;
   text-align: center;
   padding: 1rem 0;
 }
-
-.card-servicios img {
+.servicios .card-servicios img {
   width: 100%;
   object-fit: cover;
 }
-
-.card-servicios p {
+.servicios .card-servicios p {
   text-align: justify;
   word-spacing: 2px;
   padding: 10px;
 }
-
-.contenedor-cu {
-  justify-content: center;
-  background-color: #f1f1f1;
-}
-
-.p-service {
+.servicios .p-service {
   display: flex;
   width: 40%;
   text-align: center;
@@ -201,65 +207,11 @@ header .contenedor-header .hero-card a:hover {
   font-family: "Source Code Pro", monospace;
 }
 
-form {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  padding: 1.5rem 0;
-  margin: 0 auto;
+.contenedor-cu {
+  justify-content: center;
+  background-color: #f1f1f1;
 }
-
-label {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 2rem;
-}
-
-textarea {
-  height: 90px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px 14px;
-  border-radius: 5px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  resize: none;
-}
-
-.form-group {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.field-group {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-input[type=reset] {
-  background-color: #FB3640;
-}
-
-input[type=submit] {
-  background-color: #09f;
-}
-
-input[type=reset],
-input[type=submit] {
-  width: 10rem;
-  border-radius: 5px;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.contacto {
+.contenedor-cu .contacto {
   padding: 1rem 2rem;
   width: 80%;
   display: flex;
@@ -270,74 +222,36 @@ input[type=submit] {
   padding: 4rem 0;
   background-color: #f1f1f1;
 }
-
-.page-footer {
-  background-color: #363636;
-  padding: 6rem 7rem;
-  color: white;
-  position: relative;
-}
-
-.page-fcontainer {
-  position: relative;
-  z-index: 10;
-}
-
-.section-footer {
+.contenedor-cu .contacto article form {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /* gap: 15px; */
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 1.5rem 0;
+  margin: 0 auto;
 }
-
-.ubicacion {
-  width: 35%;
-  padding: 2rem;
-  /* border: solid 1px red; */
+.contenedor-cu .contacto article form label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
 }
-
-.social-box {
-  width: 25%;
-  padding: 2rem;
-  /* border: solid 1px green; */
-}
-
-.social-box h2 {
-  margin-bottom: 1rem;
-}
-
-.social-box ul {
+.contenedor-cu .contacto article form .form-group {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  list-style: none;
-}
-
-.social-box ul li {
-  display: flex;
-  align-items: center;
+  justify-content: flex-end;
   gap: 10px;
 }
-
-.social-box ul li p {
-  font-size: 1.5rem;
-}
-
-.social-box ul li a,
-.social-box ul li a i {
-  color: white;
-}
-
-.social-box ul li a i {
-  font-size: 3rem;
-}
-
-.navini .navigation-footer ul {
-  /* width: 100%; */
-  /* border: 1px solid brown; */
+.contenedor-cu .contacto article form .form-group .field-group {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+}
+.contenedor-cu .contacto article form .form-reset {
+  background-color: #FB3640;
+}
+.contenedor-cu .contacto article form .form-submit {
+  background-color: #09f;
+}
+.contenedor-cu .contacto article form textarea {
+  height: 90px;
 }
 
 .main-aboutus {
@@ -346,15 +260,13 @@ input[type=submit] {
   place-items: center;
   background-color: #f1f1f1;
 }
-
-.about-us {
+.main-aboutus .about-us {
   font-size: 2rem;
   font-family: "Source Code Pro", monospace;
   text-align: center;
   width: 60%;
 }
-
-.h2-aboutus {
+.main-aboutus .about-us .h2-aboutus {
   text-transform: uppercase;
   font-size: 3rem;
   font-family: "Source Code Pro", monospace;
@@ -375,7 +287,6 @@ input[type=submit] {
   justify-content: center;
   padding: 2rem;
 }
-
 .enter-login h2 {
   font-size: 3rem;
   font-family: "Kanit", sans-serif;
@@ -383,7 +294,6 @@ input[type=submit] {
   padding: 2rem;
   text-transform: uppercase;
 }
-
 .enter-login p {
   font-size: 1.5rem;
   text-align: center;
@@ -391,12 +301,63 @@ input[type=submit] {
   width: 20%;
   padding: 1rem;
 }
-
-.bottom-submit {
+.enter-login article .bottom-submit {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
+}
+.enter-login article .bottom-submit .form-submit {
+  background-color: #09f;
+}
+.page-footer {
+  background-color: #363636;
+  padding: 6rem 7rem;
+  color: white;
+  position: relative;
+}
+.page-footer .page-fcontainer {
+  position: relative;
+  z-index: 10;
+}
+.page-footer .page-fcontainer .section-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.page-footer .page-fcontainer .section-footer .ubicacion {
+  width: 35%;
+  padding: 2rem;
+}
+.page-footer .page-fcontainer .social-box {
+  width: 25%;
+  padding: 2rem;
+}
+.page-footer .page-fcontainer .social-box h2 {
+  margin-bottom: 1rem;
+}
+.page-footer .page-fcontainer .social-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.page-footer .page-fcontainer .social-box ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page-footer .page-fcontainer .social-box ul li p {
+  font-size: 1.5rem;
+}
+.page-footer .page-fcontainer .social-box ul li a i {
+  color: white;
+  font-size: 3rem;
+}
+.page-footer .page-fcontainer .navini .navigation-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 @media (max-width: 1050px) {
