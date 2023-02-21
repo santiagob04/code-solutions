@@ -361,6 +361,10 @@ header .contenedor-header .hero-card a:hover {
 }
 
 @media (max-width: 1050px) {
+  header .navbar .navbar-collapse .navbar-list {
+    flex-direction: column;
+    text-align: end;
+  }
   .main-aboutus {
     width: 100%;
     height: 100%;
@@ -427,12 +431,12 @@ header .contenedor-header .hero-card a:hover {
   }
 }
 @media (max-width: 768px) {
-  .navbar .navbar-collapse .navbar-list {
-    flex-direction: column;
-    text-align: end;
+  header .contenedor-header .hero-card {
+    width: 100%;
   }
-  .contenedor-header .hero-card {
-    width: 60%;
+  header .contenedor-header .hero-card p {
+    width: 100%;
+    font-size: 1.2rem;
   }
   .servicios {
     flex-direction: column;
@@ -442,13 +446,8 @@ header .contenedor-header .hero-card a:hover {
   }
 }
 @media (max-width: 386px) {
-  .navbar .navbar-collapse .navbar-list {
-    flex-direction: column;
-    text-align: center;
-  }
-  .contenedor-header .hero-card {
-    justify-content: flex-start;
-    width: 100%;
+  header .navbar .container-fluid .logo {
+    display: none;
   }
   .servicios {
     height: 100%;
