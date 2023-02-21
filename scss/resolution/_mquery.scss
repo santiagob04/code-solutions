@@ -1,34 +1,65 @@
-@media(max-width:1050px){
-    header{
-        .navbar .navbar-collapse .navbar-list {
-            flex-direction: column;
-            text-align: end;
-        }
-    }
-    .main-aboutus{
+@media(max-width:1050px) {
+    .main-aboutus {
         width: 100%;
         height: 100%;
     }
+
     .main-aboutus p {
         font-size: 1.5rem;
     }
-    .enter-login p{
+
+    .enter-login p {
         font-size: 1.5rem;
         width: 100%;
     }
-    .servicios{
+
+    .servicios {
         height: 100%;
+
+        .p-service {
+            text-align: left;
+            width: 100%;
+            font-weight: 300;
+            margin-top: 0;
+            padding: 1.5rem;
+        }
     }
-    .p-service {
-        width: 100%;
-        font-size: 1.3rem;
-        padding: 1rem;
-        margin: 10px;
-    }
+
     .cards-centradas {
         width: 50%;
         justify-content: center;
     }
+
+    .main-aboutus {
+
+        .about-us {
+            width: 80%;
+            margin: 2rem auto;
+
+            p {
+                text-align: left;
+                width: 100%;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .page-footer {
+        .page-fcontainer {
+            .section-footer {
+                .ubicacion {
+                    width: 60%;
+
+                    .frameUbicacion {
+                        iframe {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .page-footer {
         padding: 0;
         margin: 0;
@@ -46,18 +77,6 @@
     .cu-titulo {
         text-align: center;
         margin-top: 1rem;
-    }
-
-    .ubicacion .frameUbicacion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .ubicacion .frameUbicacion iframe {
-        width: 80%;
-        margin: 0 auto;
     }
 
     .social-box {
@@ -79,12 +98,22 @@
     }
 }
 
+@media(max-width:992px) {
+    header {
+        .navbar .navbar-collapse .navbar-list {
+            flex-direction: column;
+            text-align: end;
+        }
+    }
+}
+
 @media(max-width:768px) {
-    header{
+    header {
         .contenedor-header {
             .hero-card {
                 width: 100%;
-                p{
+
+                p {
                     width: 100%;
                     font-size: 1.2rem;
                 }
@@ -95,21 +124,56 @@
     .servicios {
         flex-direction: column;
     }
-    .card-servicios{
+
+    .card-servicios {
         margin: 0;
     }
+
+    .page-footer {
+        .page-fcontainer {
+            .section-footer {
+                .ubicacion {
+                    width: 80%;
+
+                }
+            }
+        }
+    }
+
+    .main-aboutus {
+        .about-us {
+            p {
+                text-align: left;
+                width: 100%;
+                font-weight: 300;
+            }
+        }
+    }
 }
+
 @media(max-width:386px) {
     header {
         .navbar {
-            .container-fluid{
-                .logo{
+            .container-fluid {
+                .logo {
                     display: none;
                 }
             }
         }
     }
+
     .servicios {
         height: 100%;
     }
+
+    .page-footer {
+        .page-fcontainer {
+            .section-footer {
+                .ubicacion {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
 }

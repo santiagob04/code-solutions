@@ -150,7 +150,6 @@ header .contenedor-header .hero-card a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 60px;
   padding: 4rem 0;
 }
 .servicios .title-text {
@@ -200,11 +199,12 @@ header .contenedor-header .hero-card a:hover {
 }
 .servicios .p-service {
   display: flex;
-  width: 40%;
+  width: 50%;
   text-align: center;
   font-size: 1.5rem;
   word-spacing: 2px;
   font-family: "Source Code Pro", monospace;
+  margin-top: 2rem;
 }
 
 .contenedor-cu {
@@ -361,10 +361,6 @@ header .contenedor-header .hero-card a:hover {
 }
 
 @media (max-width: 1050px) {
-  header .navbar .navbar-collapse .navbar-list {
-    flex-direction: column;
-    text-align: end;
-  }
   .main-aboutus {
     width: 100%;
     height: 100%;
@@ -379,15 +375,31 @@ header .contenedor-header .hero-card a:hover {
   .servicios {
     height: 100%;
   }
-  .p-service {
+  .servicios .p-service {
+    text-align: left;
     width: 100%;
-    font-size: 1.3rem;
-    padding: 1rem;
-    margin: 10px;
+    font-weight: 300;
+    margin-top: 0;
+    padding: 1.5rem;
   }
   .cards-centradas {
     width: 50%;
     justify-content: center;
+  }
+  .main-aboutus .about-us {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .main-aboutus .about-us p {
+    text-align: left;
+    width: 100%;
+    font-weight: 300;
+  }
+  .page-footer .page-fcontainer .section-footer .ubicacion {
+    width: 60%;
+  }
+  .page-footer .page-fcontainer .section-footer .ubicacion .frameUbicacion iframe {
+    width: 100%;
   }
   .page-footer {
     padding: 0;
@@ -403,16 +415,6 @@ header .contenedor-header .hero-card a:hover {
   .cu-titulo {
     text-align: center;
     margin-top: 1rem;
-  }
-  .ubicacion .frameUbicacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .ubicacion .frameUbicacion iframe {
-    width: 80%;
-    margin: 0 auto;
   }
   .social-box {
     width: 100%;
@@ -430,6 +432,12 @@ header .contenedor-header .hero-card a:hover {
     padding: 0;
   }
 }
+@media (max-width: 992px) {
+  header .navbar .navbar-collapse .navbar-list {
+    flex-direction: column;
+    text-align: end;
+  }
+}
 @media (max-width: 768px) {
   header .contenedor-header .hero-card {
     width: 100%;
@@ -444,6 +452,14 @@ header .contenedor-header .hero-card a:hover {
   .card-servicios {
     margin: 0;
   }
+  .page-footer .page-fcontainer .section-footer .ubicacion {
+    width: 80%;
+  }
+  .main-aboutus .about-us p {
+    text-align: left;
+    width: 100%;
+    font-weight: 300;
+  }
 }
 @media (max-width: 386px) {
   header .navbar .container-fluid .logo {
@@ -451,6 +467,9 @@ header .contenedor-header .hero-card a:hover {
   }
   .servicios {
     height: 100%;
+  }
+  .page-footer .page-fcontainer .section-footer .ubicacion {
+    width: 100%;
   }
 }
 
